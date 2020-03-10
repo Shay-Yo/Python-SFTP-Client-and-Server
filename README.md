@@ -15,7 +15,7 @@ It contains a threading class that handles each client call simultaneously in a 
 The program also contains a parser, that way the user can change the program parameters to his needs.
 
 
-# SFTP Client
+# My SFTP Client
 The SFTP clients is a bit more advanced than the my SFTP server program, the client program contains several functions and classes.
 The first class is the "FileHandlerWithHeader" class. Because normal log file do not support headers in them this class replaces the normal log handler of the python loggin module. The header of the log file will contain the file size, the packet size, the number of threads uploading (users), the delay time in seconds between each upload and if the uploads are executed with closing and opening the connection of the client with the server after each upload or keeping the connection opent at all times and only after uploading the entire file closing the connection.
 The second class is the threading class and it is used to handle the users uploads in different threads.
